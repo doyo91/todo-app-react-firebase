@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   modalTitle: {
     marginBottom: "20px",
   },
+  input: {
+    marginBottom: "5px",
+  },
   icon: {
     marginRight: "5px",
   },
@@ -73,6 +76,7 @@ export const Task = (props) => {
         <div className={classes.paper}>
           <h1 className={classes.modalTitle}>Edit Task</h1>
           <Input
+            className={classes.input}
             placeholder={props.task.task}
             value={input}
             onChange={(event) => setInput(event.target.value)}

@@ -19,6 +19,10 @@ const AppStyled = styled.div`
     margin: 2rem auto;
   }
 
+  .App__input {
+    margin-bottom: 1rem;
+  }
+
   .App__btn {
     margin-left: 1rem;
   }
@@ -55,6 +59,7 @@ function App() {
       <FormControl>
         <InputLabel>Write a Task</InputLabel>
         <Input
+          className="App__input"
           value={input}
           onChange={(event) => setInput(event.target.value)}
         />
